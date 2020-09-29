@@ -1,0 +1,52 @@
+.button-transparent {
+    outline-color: 0;
+    outline-style: none;
+    outline-width: 0;
+    border: none;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+    border: 1px solid #afafaf;
+    padding: 2px;
+    margin-left: 10px;
+
+    &:before,
+    &:after {
+        content: ' ';
+        width: 9px;
+        height: 9px;
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        background-color: #999;
+    }
+
+    &:after {
+        top: auto;
+        right: auto;
+        bottom: 2px;
+        left: 2px;
+    }
+}
+
+.hex-code {
+    margin: 0 auto;
+    text-align: center;
+    padding: 1.5rem 2rem;
+    border-radius: 0.2rem;
+    border: none;
+    width: 45%;
+    display: block;
+    outline: none;
+    height: 5px;
+    background: transparent;
+    cursor: text;
+    outline: none;
+    color: #625261;
+    font-weight: 600;
+    font-size: 100%;
+    font-family: "Courier New", Monaco, monospace;
+    transition: all 0.1s ease-in-out;
+}
