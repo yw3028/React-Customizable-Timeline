@@ -27,9 +27,9 @@ import Timeline from 'react-customizable-timeline';
 ```
 
 ## Configuration
-### Data
+### Data Format
 
-*Data is an array of objects. For example:*
+**Data is an array of objects and the format MUST be like this:**
 
 ```typescript jsx
 const data = [
@@ -67,8 +67,17 @@ const data = [
 |     **lineStyle**     |  String  |   Optional   |        dotted       |     `solid`/`dotted`/`dashed`/`hidden`    |
 
 
+## Contributing
 
+To contribue please read the [CONTRIBUTING.md](https://github.com/Leon31/gallereact/blob/master/CONTRIBUTING.md) 
 
+## Contributors
+
+* Yu Wang - [GitHub](https://github.com/yw3028) 
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/yw3028/React-Customizable-Timeline/blob/master/LICENSE) file for details.
 
 
 
