@@ -1,6 +1,6 @@
 {
   "name": "react-customizable-timeline",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React Customizable Timeline Component",
   "main": "./build/index.js",
   "scripts": {
