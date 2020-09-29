@@ -1,0 +1,23 @@
+{
+  "name": "react-customizable-timeline",
+  "version": "1.0.0",
+  "description": "React Customizable Timeline Component",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yw3028/React-Customizable-Timeline.git"
+  },
+  "keywords": [
+    "react",
+    "timeline"
+  ],
+  "author": "Yu Wang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yw3028/React-Customizable-Timeline/issues"
+  },
+  "homepage": "https://github.com/yw3028/React-Customizable-Timeline#readme"
+}
