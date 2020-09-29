@@ -1,6 +1,9 @@
 # React-Customizable-Timeline
 
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-blueviolet.svg?style=flat)](http://makeapullrequest.com) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat)](https://github.com/prettier/prettier) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/gallereact.svg) [![Issues](http://img.shields.io/github/issues/yw3028/React-Customizable-Timeline.svg)](https://github.com/yw3028/React-Customizable-Timelin/issues )
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-blueviolet.svg?style=flat)](http://makeapullrequest.com) 
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat)](https://github.com/prettier/prettier) 
+[![Issues](http://img.shields.io/github/issues/yw3028/React-Customizable-Timeline.svg)](https://github.com/yw3028/React-Customizable-Timelin/issues )
+[![license](https://img.shields.io/github/license/yw3028/React-Customizable-Timeline.svg)](https://github.com/yw3028/React-Customizable-Timeline/blob/master/LICENSE)
 
 ## Getting Started
 ```bash
@@ -70,7 +73,7 @@ const data = [
 
 ## Contributing
 
-To contribue please read the [CONTRIBUTING.md](https://github.com/Leon31/gallereact/blob/master/CONTRIBUTING.md) 
+To contribue please read the [CONTRIBUTING.md](https://github.com/yw3028/React-Customizable-Timeline/blob/master/CONTRIBUTING.md) 
 
 ## Contributors
 
