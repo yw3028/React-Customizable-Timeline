@@ -61,7 +61,7 @@ const Timeline: React.FC<Props> = ({
                                 {item.events.map((event, index) => {
                                     return (
                                         <Fade>
-                                            <S_TimelineItem
+                                            <TimelineItem
                                                 key={index}
                                                 title={event.title}
                                                 subtitle={event.subtitle}
