@@ -10,6 +10,11 @@
 $ npm i react-customizable-timeline
 ```
 
+You might also need to install peer dependencies
+```bash
+$ npm i styled-components react-awesome-reveal react-spring
+```
+
 ### How to use
 First thing first, check out [this DEMO](https://react-customizable-timeline.vercel.app/)!
 
