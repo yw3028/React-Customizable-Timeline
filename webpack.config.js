@@ -1,6 +1,5 @@
 var path = require('path');
 module.exports = {
-  mode: 'production',
   entry: './src/index.tsx',
   output: {
     path: path.resolve(__dirname, 'build'),
@@ -14,7 +13,7 @@ module.exports = {
         include: path.resolve(__dirname, 'src'),
         exclude: /(node_modules|demo|build)/,
         use: 'ts-loader',
-      }
+      },
     ],
   },
   resolve: {
