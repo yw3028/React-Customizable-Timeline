@@ -4,6 +4,7 @@
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat)](https://github.com/prettier/prettier) 
 [![Issues](http://img.shields.io/github/issues/yw3028/React-Customizable-Timeline.svg)](https://github.com/yw3028/React-Customizable-Timelin/issues )
 [![license](https://img.shields.io/github/license/yw3028/React-Customizable-Timeline.svg)](https://github.com/yw3028/React-Customizable-Timeline/blob/master/LICENSE)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/44528084-df91-4393-aa08-66efa63a12a4/deploy-status)](https://app.netlify.com/sites/react-customizable-timeline/deploys)
 
 ## Getting Started
 ```bash

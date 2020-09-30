@@ -29,7 +29,7 @@ const CodeSnippet: React.FC<OptionProps> = ({ colors, font, shapes, animation })
         <pre>
             <code className="language-javascript">
                 {`
-    <Eventline
+    <Timeline
         data={data}
         primaryDarkColor='${colors.primaryColor}' 
         primaryLightColor='${colors.secondaryColor}' 

@@ -28,7 +28,7 @@ const ColorPicker: React.FC<OptionProps> = ({ colors, setColors }) => {
                     <h4> {color[0].toUpperCase() + color.slice(1).replace('Color', '')} </h4>
                     <div style={{ display: 'flex' }}>
                         <input onChange={handleColorChange} type="color" value={colors[color]} name={color} />
-                        <button className="button-transparent" name={color} onClick={setTransparency} />
+                        {color==='backgroundColor' && <button className="button-transparent" name={color} onClick={setTransparency} />}
                     </div>
                     <input
                         className="hex-code"
