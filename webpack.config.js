@@ -14,14 +14,7 @@ module.exports = {
         include: path.resolve(__dirname, 'src'),
         exclude: /(node_modules|demo|build)/,
         use: 'ts-loader',
-      },
-      {
-        test: /\.(js|jsx)$/,
-        include: path.resolve(__dirname, 'src'),
-        exclude: /(node_modules|demo|build)/,
-        use: {
-          loader: 'babel-loader',
-        },
+      }
       },
     ],
   },
