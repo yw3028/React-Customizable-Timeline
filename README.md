@@ -11,6 +11,8 @@ $ npm i react-customizable-timeline
 ```
 
 ### How to use
+First thing first, check out [this DEMO](https://react-customizable-timeline.vercel.app/)!
+
 **Step 1:** Import the component
 ```js
 import Timeline from 'react-customizable-timeline';
@@ -23,7 +25,7 @@ import Timeline from 'react-customizable-timeline';
   primaryLightColor='white'
   titleShape='circlr'
   dotShape='diamond'
-  lineStyle='dotted
+  lineStyle='dotted'
   primaryFont='monospace'
   animation={true}
 />
