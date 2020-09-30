@@ -13,7 +13,8 @@
     "node-sass": "^4.14.1",
     "prismjs": "^1.21.0",
     "react-scripts": "3.4.3",
-    "typescript": "~3.7.2"
+    "typescript": "~3.7.2",
+    "react-customizable-timeline": "file:../"
   },
   "scripts": {
     "start": "react-scripts start",
