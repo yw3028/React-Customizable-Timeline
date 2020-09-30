@@ -15,7 +15,6 @@ module.exports = {
         exclude: /(node_modules|demo|build)/,
         use: 'ts-loader',
       }
-      },
     ],
   },
   resolve: {
