@@ -33,7 +33,7 @@ const dotShapeSelector = shape => {
   }
 };
 
-const titleShapeSelector = (shape, color) => {
+const titleShapeSelector = shape => {
   switch (shape) {
     case 'circle':
       return `
