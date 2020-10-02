@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div>
+  <div
+    class="sc-bxivhb SUHGw"
+  >
+    <div>
+      <div
+        style="cursor: pointer;"
+      >
+        <h4 />
+        <h5 />
+      </div>
+    </div>
+  </div>
+</div>
+`;
