@@ -1,28 +1,52 @@
-import { cleanup } from '@testing-library/react';
+import { cleanup, render, waitFor } from '@testing-library/react';
 import React from 'react';
-import ReactDOM from 'react-dom';
 import Timeline from './Timeline';
 
 let container;
 
-beforeEach(() => {
-  container = document.createElement('div');
-  ReactDOM.render(<Timeline />, container);
-});
+const renderComponent = data => render(<Timeline data={data} />);
 
 afterEach(() => {
   cleanup();
 });
 
-test('render correctly', () => {
-  expect(container).toMatchSnapshot();
+test('render correctly', async () => {
+  const component = renderComponent(data);
+  await waitFor(() => {
+    expect(component.baseElement).toMatchSnapshot();
+  });
 });
 
-test('Renders the title', () => {});
+it('Renders the title', async () => {
+  const { getByText } = renderComponent(data);
+  await waitFor(() => {
+    getByText(/Avengers/i);
+  });
+});
+
+global.IntersectionObserver = class IntersectionObserver {
+  constructor() {}
+
+  disconnect() {
+    return null;
+  }
+
+  observe() {
+    return null;
+  }
+
+  takeRecords() {
+    return null;
+  }
+
+  unobserve() {
+    return null;
+  }
+};
 
 const data = [
   {
-    title: 'TITLE 1',
+    title: 'Avengers',
     events: [
       {
         title: 'EVENT TITLE',
