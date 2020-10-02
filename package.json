@@ -4,9 +4,11 @@
   "description": "React Customizable Timeline Component",
   "main": "./build/index.js",
   "scripts": {
-    "test": "jest --watch",
-    "start": "webpack --watch",
-    "build": "webpack"
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "start": "build:watch",
+    "build": "webpack",
+    "build:watch": "webpack:watch"
   },
   "repository": {
     "type": "git",
