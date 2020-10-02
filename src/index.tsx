@@ -1,1 +1,2 @@
-export { default } from './Timeline';
+import Timeline from './Timeline';
+export default Timeline;

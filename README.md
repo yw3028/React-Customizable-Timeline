@@ -28,7 +28,7 @@ import Timeline from 'react-customizable-timeline';
   data={data}
   primaryDarkColor='black'
   primaryLightColor='white'
-  titleShape='circlr'
+  titleShape='circle'
   dotShape='diamond'
   lineStyle='dotted'
   primaryFont='monospace'
