@@ -5,10 +5,12 @@ type OptionProps = {
   isAnimated: boolean;
 };
 
-const AnimationToggle: React.FC<OptionProps> = ({ isAnimated }) => {
+const AnimationToggle = ({ isAnimated }) => {
+  console.log(isAnimated);
   const [animation, setAnimation] = useState(isAnimated);
+
   const handleAnimationChange = () => {
-    setAnimation(!isAnimated);
+    setAnimation(!animation);
   };
 
   const clickedButton = { color: 'beige', backgroundColor: '#ad9d9d' };
