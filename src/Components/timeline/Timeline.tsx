@@ -17,7 +17,7 @@ type Props = {
   lineStyle?: string;
 };
 
-const Timeline: React.FC<Props> = ({
+function Timeline({
   animation = true,
   data,
   primaryDarkColor = '#625261',
@@ -26,7 +26,7 @@ const Timeline: React.FC<Props> = ({
   titleShape = 'circle',
   dotShape = 'circle',
   lineStyle = 'dotted',
-}) => {
+}: Props) {
   const theme = {
     primaryDarkColor,
     primaryLightColor,
@@ -88,6 +88,6 @@ const Timeline: React.FC<Props> = ({
       </animated.div>
     </ThemeProvider>
   );
-};
+}
 
 export default Timeline;
