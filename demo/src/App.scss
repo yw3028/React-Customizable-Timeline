@@ -24,5 +24,20 @@ body{
             flex-direction: column;
             align-items: center;
         }
+
     }
+
+    @media(max-width:600px) {
+        .demo{
+           flex-direction:column;
+        }
+       .timeline{
+         order: 2;
+        }
+        .customization{
+            order:1;
+        }
+    }
+
+
 }
