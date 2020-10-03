@@ -1,6 +1,10 @@
-import { cleanup, render, waitFor, screen } from '@testing-library/react';
+import { cleanup, render, screen } from '@testing-library/react';
 import React from 'react';
 import Timeline from './Timeline';
+import data from '../mocks/index';
+import IntersectionObserver from '../helper/testHelper';
+
+global.IntersectionObserver = IntersectionObserver;
 
 const renderComponent = data => render(<Timeline data={data} />);
 
@@ -28,43 +32,3 @@ it("Doesn't render children elements", async () => {
 
   await expect(screen.queryByText(/LisaPisa/i)).toBeFalsy();
 });
-
-global.IntersectionObserver = class IntersectionObserver {
-  constructor() {}
-
-  disconnect() {
-    return null;
-  }
-
-  observe() {
-    return null;
-  }
-
-  takeRecords() {
-    return null;
-  }
-
-  unobserve() {
-    return null;
-  }
-};
-
-const data = [
-  {
-    title: 'Avengers',
-    events: [
-      {
-        title: 'Avengers:StartGame',
-        subtitle: 'StartGame',
-        content: 'content',
-        location: 'Knowhere',
-        label: '#avengers #marvel',
-        img: {
-          url:
-            'https://images.unsplash.com/photo-1600790078201-5490baf711d6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-          alt: 'picture',
-        },
-      },
-    ],
-  },
-];
