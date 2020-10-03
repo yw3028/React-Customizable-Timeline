@@ -1,41 +1,34 @@
-import { cleanup } from '@testing-library/react';
+import { cleanup, render, screen } from '@testing-library/react';
 import React from 'react';
-import ReactDOM from 'react-dom';
 import Timeline from './Timeline';
+import data from '../mocks/index';
+import IntersectionObserver from '../helper/testHelper';
 
-let container;
+global.IntersectionObserver = IntersectionObserver;
 
-beforeEach(() => {
-  container = document.createElement('div');
-  ReactDOM.render(<Timeline />, container);
-});
+const renderComponent = data => render(<Timeline data={data} />);
 
 afterEach(() => {
   cleanup();
 });
 
-test('render correctly', () => {
-  expect(container).toMatchSnapshot();
+test('render correctly', async () => {
+  const component = renderComponent(data);
+  await expect(component.baseElement).toMatchSnapshot();
 });
 
-test('Renders the title', () => {});
+it('Renders the title', async () => {
+  renderComponent(data);
+  await expect(screen.getByText('Avengers')).toBeTruthy();
+});
 
-const data = [
-  {
-    title: 'TITLE 1',
-    events: [
-      {
-        title: 'EVENT TITLE',
-        subtitle: 'EVENT SUBTITLE',
-        content: 'CONTENT',
-        location: 'LOCATION',
-        label: '#LABLE1 #LABLE2',
-        img: {
-          url:
-            'https://images.unsplash.com/photo-1600790078201-5490baf711d6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-          alt: 'pic',
-        },
-      },
-    ],
-  },
-];
+// eslint-disable-next-line quotes
+it("Doesn't render children elements", async () => {
+  render(
+    <Timeline data={data}>
+      <p>LisaPisa</p>
+    </Timeline>,
+  );
+
+  await expect(screen.queryByText(/LisaPisa/i)).toBeFalsy();
+});
