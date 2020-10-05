@@ -4,9 +4,12 @@
   "description": "React Customizable Timeline Component",
   "main": "./build/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack --watch",
-    "build": "webpack"
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "start": "build:watch",
+    "build": "webpack",
+    "build:watch": "webpack:watch",
+    "fix": "npm rebuild && rm -rf node_modules && npm i"
   },
   "repository": {
     "type": "git",
@@ -36,28 +39,39 @@
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.5",
+    "@babel/plugin-transform-runtime": "^7.11.5",
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
-    "babel-eslint": "^10.0.2",
-    "babel-loader": "^8.0.6",
-    "@types/react": "^16.9.49",
+    "@babel/preset-typescript": "^7.10.4",
+    "@testing-library/react": "^11.0.4",
     "@types/jest": "^24.0.0",
     "@types/node": "^12.0.0",
+    "@types/react": "^16.9.49",
     "@types/react-dom": "^16.9.8",
     "@types/styled-components": "^5.1.3",
-    "@typescript-eslint/eslint-plugin": "^4.2.0",
-    "@typescript-eslint/parser": "^4.2.0",
-    "eslint": "^6.0.1",
-    "eslint-config-prettier": "^6.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.3.0",
+    "@typescript-eslint/parser": "^4.3.0",
+    "babel-eslint": "^10.0.2",
+    "babel-loader": "^8.0.6",
+    "eslint": "^7.10.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-config-standard": "^14.1.1",
     "eslint-plugin-flowtype": "^3.11.1",
-    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.1.0",
-    "eslint-plugin-react": "^7.14.2",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.21.3",
     "eslint-plugin-react-hooks": "^1.6.1",
-    "prettier": "^1.18.2",
+    "eslint-plugin-standard": "^4.0.1",
+    "husky": "^4.3.0",
+    "jest": "^26.4.2",
+    "lint-staged": "^10.4.0",
+    "prettier": "^1.19.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-test-renderer": "^16.13.1",
     "styled-components": "^4.3.2",
     "ts-loader": "^8.0.4",
     "typescript": "^4.0.3",
@@ -65,7 +79,17 @@
     "webpack-cli": "^3.3.12"
   },
   "dependencies": {
+    "@babel/runtime": "^7.11.2",
     "react-awesome-reveal": "^3.3.1",
     "react-spring": "^8.0.27"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": "eslint --cache --fix",
+    "*.{js,jsx,css,md,ts,tsx}": "prettier --write"
   }
 }
