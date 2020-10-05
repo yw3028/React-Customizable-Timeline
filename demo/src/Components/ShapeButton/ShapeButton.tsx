@@ -40,7 +40,7 @@ const ShapeButton: React.FC<OptionProps> = ({ shapes, setShapes }) => {
                   value={button}
                   onClick={handleShapeChange}
                   name={shape}
-                  checked={shapes[shape] === button}
+                  defaultChecked={shapes[shape] === button}
                 />
                 <label htmlFor={shape + button}>{button.toUpperCase()}</label>
               </div>
