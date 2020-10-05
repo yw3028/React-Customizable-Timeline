@@ -82,7 +82,7 @@ module.exports = {
   // moduleNameMapper: {},
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
-  // modulePathIgnorePatterns: [],
+  modulePathIgnorePatterns: ['<rootDir>/demo/**/*.test.js'],
 
   // Activates notifications for test results
   // notify: false,
@@ -94,7 +94,12 @@ module.exports = {
   // preset: undefined,
 
   // Run tests from one or more projects
-  // projects: undefined,
+  projects: [
+    {
+      displayName: 'Component',
+      testMatch: ['<rootDir>/src/**/*.test.js'],
+    },
+  ],
 
   // Use this configuration option to add custom reporters to Jest
   // reporters: undefined,
@@ -185,7 +190,7 @@ module.exports = {
   // verbose: undefined,
 
   // An array of regexp patterns that are matched against all source file paths before re-running tests in watch mode
-  // watchPathIgnorePatterns: [],
+  watchPathIgnorePatterns: ['<rootDir>/demo/**/*.test.js'],
 
   // Whether to use watchman for file crawling
   // watchman: true,
