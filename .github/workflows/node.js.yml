@@ -27,4 +27,5 @@ jobs:
       - run: cd demo
       - run: npm i
       - run: cd ..
-      - run: npm run test:all
+      - run: npm run test:component
+      - run: npm run test:demo
