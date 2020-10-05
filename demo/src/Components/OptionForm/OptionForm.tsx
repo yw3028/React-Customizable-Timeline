@@ -15,7 +15,6 @@ type OptionProps = {
   font: string;
   setFont: any;
   animation: boolean;
-  setAnimation: any;
 };
 
 type Colors = {
