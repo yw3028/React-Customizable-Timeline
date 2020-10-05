@@ -77,7 +77,7 @@ const titleShapeSelector = shape => {
   }
 };
 
-export const S_Title = styled.div`
+export const STitle = styled.div`
   background-color: ${props => props.theme.primaryLightColor};
   font-weight: 700;
   font-size: 120%;
@@ -95,7 +95,7 @@ export const S_Title = styled.div`
   ${props => titleShapeSelector(props.theme.titleShape, props.theme.primaryDarkColor)};
 `;
 
-export const S_Timeline = styled.div`
+export const STimeline = styled.div`
   border-left: 2px ${props => props.theme.lineStyle} ${props => props.theme.primaryDarkColor};
   border-bottom-right-radius: 4px;
   border-top-right-radius: 4px;
@@ -111,11 +111,11 @@ export const S_Timeline = styled.div`
   max-width: 400px;
 `;
 
-export const S_TimelineSection = styled.div`
+export const STimelineSection = styled.div`
   position: relative;
 `;
 
-export const S_TimelineItem = styled.div`
+export const STimelineItem = styled.div`
   padding-bottom: 25px;
   margin-bottom: 30px;
   position: relative;
