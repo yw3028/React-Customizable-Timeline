@@ -1,5 +1,6 @@
+/* eslint-disable no-undef */
 import { cleanup, render, screen } from '@testing-library/react';
-import { afterEach, expect, it, describe } from 'jest';
+
 import React from 'react';
 import Timeline from './Timeline';
 import data from '../mocks/index';
