@@ -1,4 +1,5 @@
 import { cleanup, render, screen } from '@testing-library/react';
+import { afterEach, expect, it, describe } from 'jest';
 import React from 'react';
 import Timeline from './Timeline';
 import data from '../mocks/index';
@@ -12,23 +13,25 @@ afterEach(() => {
   cleanup();
 });
 
-test('render correctly', async () => {
-  const component = renderComponent(data);
-  await expect(component.baseElement).toMatchSnapshot();
-});
+describe('Timeline component', () => {
+  it('render correctly', async () => {
+    const component = renderComponent(data);
+    await expect(component.baseElement).toMatchSnapshot();
+  });
 
-it('Renders the title', async () => {
-  renderComponent(data);
-  await expect(screen.getByText('Avengers')).toBeTruthy();
-});
+  it('Renders the title', async () => {
+    renderComponent(data);
+    await expect(screen.getByText('Avengers')).toBeTruthy();
+  });
 
-// eslint-disable-next-line quotes
-it("Doesn't render children elements", async () => {
-  render(
-    <Timeline data={data}>
-      <p>LisaPisa</p>
-    </Timeline>,
-  );
+  // eslint-disable-next-line quotes
+  it("Doesn't render children elements", async () => {
+    render(
+      <Timeline data={data}>
+        <p>LisaPisa</p>
+      </Timeline>,
+    );
 
-  await expect(screen.queryByText(/LisaPisa/i)).toBeFalsy();
+    await expect(screen.queryByText(/LisaPisa/i)).toBeFalsy();
+  });
 });

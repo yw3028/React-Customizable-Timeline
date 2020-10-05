@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { S_TimelineItem } from '../styles';
+import { STimelineItem } from '../styles';
 import { useSpring, animated, config } from 'react-spring';
 
 type ItemProps = {
@@ -12,15 +12,7 @@ type ItemProps = {
   animation?: boolean;
 };
 
-const TimelineItem: React.FC<ItemProps> = ({
-  title,
-  subtitle,
-  content,
-  img,
-  label,
-  location,
-  animation,
-}) => {
+const TimelineItem = ({ title, subtitle, content, img, label, location, animation }: ItemProps) => {
   const [showContent, setShowContent] = useState(false);
   const handleClick = () => {
     setShowContent(!showContent);
@@ -31,7 +23,7 @@ const TimelineItem: React.FC<ItemProps> = ({
     config: config.wobbly,
   });
   return (
-    <S_TimelineItem>
+    <STimelineItem>
       <animated.div style={animation ? itemAnimation : undefined} onClick={handleClick}>
         <div style={{ cursor: 'pointer' }}>
           <h4>{title}</h4>
@@ -68,7 +60,7 @@ const TimelineItem: React.FC<ItemProps> = ({
           </div>
         )}
       </animated.div>
-    </S_TimelineItem>
+    </STimelineItem>
   );
 };
 
