@@ -28,14 +28,19 @@ body{
     }
 
     @media(max-width:600px) {
-        .demo{
+        .demo {
            flex-direction:column;
         }
-       .timeline{
+       .timeline {
          order: 2;
         }
-        .customization{
+        .customization {
             order:1;
+            flex-wrap: wrap;
+           
+        }
+        .color_selection{ 
+            justify-content:center;
         }
     }
 

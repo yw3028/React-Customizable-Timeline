@@ -105,3 +105,19 @@
         width: auto;
     }
 }
+
+@media(max-width:600px){
+    .color {
+        .color_section {
+           flex-wrap: wrap;
+
+            .color_section_colors {       
+                align-items: start;
+            }
+        }
+    }
+
+    .shapes_selection{
+        flex-wrap: wrap; 
+    }
+}
