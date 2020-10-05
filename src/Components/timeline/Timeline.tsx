@@ -1,8 +1,9 @@
+// eslint-disable-next-line no-use-before-define
 import React from 'react';
 import { useSpring, animated, config } from 'react-spring';
 import { ThemeProvider } from 'styled-components';
 import TimelineItem from '../timelineItem/TimelineItem';
-import { S_Timeline, S_TimelineSection, S_Title } from '../styles';
+import { STimeline, STimelineSection, STitle } from '../styles';
 import { Item } from '../../Models/Item';
 import { Fade } from 'react-awesome-reveal';
 
@@ -56,18 +57,18 @@ function Timeline({
   return (
     <ThemeProvider theme={theme}>
       <animated.div style={animation ? lineAnimation : undefined}>
-        <S_Timeline>
+        <STimeline>
           {data?.map((item, index) => {
             return (
-              <S_TimelineSection key={index}>
+              <STimelineSection key={index}>
                 <animated.div style={animation ? titleAnimation : undefined}>
-                  <S_Title key={item.title}>
+                  <STitle key={item.title}>
                     <div>{item.title}</div>
-                  </S_Title>
+                  </STitle>
                 </animated.div>
                 {item.events.map((event, index) => {
                   return (
-                    <Fade>
+                    <Fade key={index}>
                       <TimelineItem
                         key={index}
                         title={event.title}
@@ -81,10 +82,10 @@ function Timeline({
                     </Fade>
                   );
                 })}
-              </S_TimelineSection>
+              </STimelineSection>
             );
           })}
-        </S_Timeline>
+        </STimeline>
       </animated.div>
     </ThemeProvider>
   );
