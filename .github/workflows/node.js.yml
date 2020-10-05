@@ -24,4 +24,8 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm i
-      - run: npm run test:all
+      - run: cd demo
+      - run: npm i
+      - run: cd ..
+      - run: npm run test:component
+      - run: npm run test:demo
