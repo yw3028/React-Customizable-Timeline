@@ -20,11 +20,7 @@ type ShapeButtons = {
   [key: string]: string[];
 };
 
-<<<<<<< HEAD
 const ShapeButton = ({ shapes, setShapes }: OptionProps) => {
-=======
-const ShapeButton: React.FC<OptionProps> = ({ shapes, setShapes }) => {
->>>>>>> 2236a41f07ef9750cb2a69e1012cea9feed61977
   const handleShapeChange = (event: MouseEvent<HTMLInputElement>) => {
     const { name, value } = event.currentTarget;
     setShapes((shapes: any) => ({ ...shapes, [name]: value }));
@@ -44,10 +40,7 @@ const ShapeButton: React.FC<OptionProps> = ({ shapes, setShapes }) => {
                   value={button}
                   onClick={handleShapeChange}
                   name={shape}
-<<<<<<< HEAD
-=======
                   checked={shapes[shape] === button}
->>>>>>> 2236a41f07ef9750cb2a69e1012cea9feed61977
                 />
                 <label htmlFor={shape + button}>{button.toUpperCase()}</label>
               </div>
