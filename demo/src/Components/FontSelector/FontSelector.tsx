@@ -1,3 +1,4 @@
+import './FontSelector.scss';
 import React, { ChangeEvent } from 'react';
 
 type OptionProps = {
