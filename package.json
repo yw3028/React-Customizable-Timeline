@@ -7,7 +7,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:component": "jest",
-    "test:demo": "cd demo && npm run test:ci",
+    "test:demo": "cd demo && npm run test",
     "test:all": "npm run test:component && npm run test:demo",
     "start": "build:watch",
     "build": "webpack",
