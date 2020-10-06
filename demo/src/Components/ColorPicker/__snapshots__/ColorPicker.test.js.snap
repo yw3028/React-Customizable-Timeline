@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ColorPicker component renders correctly 1`] = `
+<body>
+  <div>
+    <div
+      class="color_section"
+    >
+      <div
+        class="color_section_colors"
+      >
+        <h4>
+           
+          Primary
+           
+        </h4>
+        <div
+          style="display: flex;"
+        >
+          <input
+            name="primaryColor"
+            type="color"
+            value="#625261"
+          />
+        </div>
+        <input
+          class="hex-code"
+          name="primaryColor"
+          placeholder="#625261"
+          type="text"
+          value="#625261"
+        />
+      </div>
+      <div
+        class="color_section_colors"
+      >
+        <h4>
+           
+          Secondary
+           
+        </h4>
+        <div
+          style="display: flex;"
+        >
+          <input
+            name="secondaryColor"
+            type="color"
+            value="#F5F5DC"
+          />
+        </div>
+        <input
+          class="hex-code"
+          name="secondaryColor"
+          placeholder="#F5F5DC"
+          type="text"
+          value="#F5F5DC"
+        />
+      </div>
+      <div
+        class="color_section_colors"
+      >
+        <h4>
+           
+          Background
+           
+        </h4>
+        <div
+          style="display: flex;"
+        >
+          <input
+            name="backgroundColor"
+            type="color"
+            value="#FFFFFF"
+          />
+          <button
+            class="button-transparent"
+            name="backgroundColor"
+          />
+        </div>
+        <input
+          class="hex-code"
+          name="backgroundColor"
+          placeholder="#FFFFFF"
+          type="text"
+          value="#FFFFFF"
+        />
+      </div>
+    </div>
+  </div>
+</body>
+`;

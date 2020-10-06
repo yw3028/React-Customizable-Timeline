@@ -15,7 +15,7 @@ exports[`AnimationToggle component render correctly 1`] = `
           &lt;
         </span>
         Timeline
-              data
+  data
         <span
           class="token operator"
         >
@@ -33,7 +33,7 @@ exports[`AnimationToggle component render correctly 1`] = `
           }
         </span>
         
-              primaryDarkColor
+  primaryDarkColor
         <span
           class="token operator"
         >
@@ -45,7 +45,7 @@ exports[`AnimationToggle component render correctly 1`] = `
           '#625261'
         </span>
          
-              primaryLightColor
+  primaryLightColor
         <span
           class="token operator"
         >
@@ -57,7 +57,7 @@ exports[`AnimationToggle component render correctly 1`] = `
           '#F5F5DC'
         </span>
          
-              titleShape
+  titleShape
         <span
           class="token operator"
         >
@@ -69,7 +69,7 @@ exports[`AnimationToggle component render correctly 1`] = `
           'diamond'
         </span>
          
-              dotShape
+  dotShape
         <span
           class="token operator"
         >
@@ -81,7 +81,7 @@ exports[`AnimationToggle component render correctly 1`] = `
           'circle'
         </span>
          
-              lineStyle
+  lineStyle
         <span
           class="token operator"
         >
@@ -93,7 +93,7 @@ exports[`AnimationToggle component render correctly 1`] = `
           'dotted'
         </span>
          
-              primaryFont
+  primaryFont
         <span
           class="token operator"
         >
@@ -105,7 +105,7 @@ exports[`AnimationToggle component render correctly 1`] = `
           'chivo'
         </span>
          
-              animation
+  animation
         <span
           class="token operator"
         >
@@ -127,7 +127,7 @@ exports[`AnimationToggle component render correctly 1`] = `
           }
         </span>
         
-          
+
         <span
           class="token operator"
         >
@@ -138,8 +138,6 @@ exports[`AnimationToggle component render correctly 1`] = `
         >
           &gt;
         </span>
-        
-        
       </code>
     </pre>
   </div>
