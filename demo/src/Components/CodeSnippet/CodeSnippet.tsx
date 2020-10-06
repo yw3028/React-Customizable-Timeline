@@ -7,6 +7,7 @@ type OptionProps = {
   font: string;
   shapes: Shapes;
   animation: boolean;
+  position: boolean;
 };
 
 type Colors = {
@@ -20,7 +21,7 @@ type Shapes = {
   lineShape: string;
 };
 
-const CodeSnippet: React.FC<OptionProps> = ({ colors, font, shapes, animation }) => {
+const CodeSnippet: React.FC<OptionProps> = ({ colors, font, shapes, animation, position }) => {
   useEffect(() => {
     Prism.highlightAll();
   });
@@ -37,6 +38,7 @@ const CodeSnippet: React.FC<OptionProps> = ({ colors, font, shapes, animation })
   lineStyle='${shapes.lineShape}' 
   primaryFont='${font}' 
   animation={${animation}}
+  position=${position ? `'sticky'` : `'relative'`}
 />`}
       </code>
     </pre>

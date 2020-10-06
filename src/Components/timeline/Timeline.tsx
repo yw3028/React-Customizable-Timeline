@@ -61,7 +61,13 @@ function Timeline({
           {data?.map((item, index) => {
             return (
               <STimelineSection key={index}>
-                <animated.div style={animation ? titleAnimation : undefined}>
+                <animated.div
+                  style={
+                    animation
+                      ? { ...titleAnimation, position: 'sticky', top: '60px', zIndex: 999 }
+                      : { position: 'sticky', top: '60px', zIndex: 999 }
+                  }
+                >
                   <STitle key={item.title}>
                     <div>{item.title}</div>
                   </STitle>
