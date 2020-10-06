@@ -1,7 +1,6 @@
 import { cleanup, render, screen } from '@testing-library/react';
 import React from 'react';
 import userEvent from '@testing-library/user-event';
-
 import AnimationToggle from './AnimationToggle';
 
 const renderComponent = animation => render(<AnimationToggle isAnimated={animation} />);

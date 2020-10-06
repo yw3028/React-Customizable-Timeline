@@ -6,7 +6,6 @@ type OptionProps = {
 };
 
 const AnimationToggle = ({ isAnimated }) => {
-  console.log(isAnimated);
   const [animation, setAnimation] = useState(isAnimated);
 
   const handleAnimationChange = () => {

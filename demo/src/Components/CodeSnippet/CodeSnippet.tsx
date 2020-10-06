@@ -29,16 +29,15 @@ const CodeSnippet: React.FC<OptionProps> = ({ colors, font, shapes, animation })
     <pre>
       <code className="language-javascript">
         {`<Timeline
-              data={data}
-              primaryDarkColor='${colors.primaryColor}' 
-              primaryLightColor='${colors.secondaryColor}' 
-              titleShape='${shapes.titleShape}' 
-              dotShape='${shapes.dotShape}' 
-              lineStyle='${shapes.lineShape}' 
-              primaryFont='${font}' 
-              animation={${animation}}
-          />
-        `}
+  data={data}
+  primaryDarkColor='${colors.primaryColor}' 
+  primaryLightColor='${colors.secondaryColor}' 
+  titleShape='${shapes.titleShape}' 
+  dotShape='${shapes.dotShape}' 
+  lineStyle='${shapes.lineShape}' 
+  primaryFont='${font}' 
+  animation={${animation}}
+/>`}
       </code>
     </pre>
   );
