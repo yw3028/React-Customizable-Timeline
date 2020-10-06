@@ -20,7 +20,7 @@ type ShapeButtons = {
   [key: string]: string[];
 };
 
-const ShapeButton = ({ shapes, setShapes }: OptionProps) => {
+const ShapeButton: React.FC<OptionProps> = ({ shapes, setShapes }) => {
   const handleShapeChange = (event: MouseEvent<HTMLInputElement>) => {
     const { name, value } = event.currentTarget;
     setShapes((shapes: any) => ({ ...shapes, [name]: value }));

@@ -1,41 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TimelineItem component renders correctly 1`] = `
-<body>
-  <div>
-    <div
-      class="sc-bxivhb SUHGw"
-    >
-      <div>
-        <div
-          style="cursor: pointer;"
-        >
-          <h4>
-            Avengers:StartGame
-          </h4>
-          <h5>
-            StartGame
-          </h5>
-          <img
-            alt="picture"
-            src="https://images.unsplash.com/photo-1600790078201-5490baf711d6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-            style="max-width: 400px; width: 100%; min-width: 100px; padding-bottom: 10px;"
-          />
-        </div>
-        <div
-          style="font-size: small; text-align: right;"
-        >
-          <span
-            aria-label="localtion"
-            role="img"
-          >
-            📍
-          </span>
-           
-          Knowhere
-        </div>
+exports[`matches snapshot 1`] = `
+<div>
+  <div
+    class="sc-bxivhb SUHGw"
+  >
+    <div>
+      <div
+        style="cursor: pointer;"
+      >
+        <h4 />
+        <h5 />
       </div>
     </div>
   </div>
-</body>
+</div>
 `;
