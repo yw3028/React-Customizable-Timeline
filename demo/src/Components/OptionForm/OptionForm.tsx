@@ -15,6 +15,9 @@ type OptionProps = {
   font: string;
   setFont: any;
   animation: boolean;
+  setAnimation: any;
+  position: boolean;
+  setPosition: any;
 };
 
 type Colors = {
@@ -36,6 +39,9 @@ const OptionForm: React.FC<OptionProps> = ({
   font,
   setFont,
   animation,
+  setAnimation,
+  position,
+  setPosition,
 }) => {
   return (
     <div className="options">
@@ -43,7 +49,11 @@ const OptionForm: React.FC<OptionProps> = ({
       <p>Basic customization through the component's props and CSS custom-properties.</p>
       <div className="animation">
         <h2>Animation</h2>
-        <AnimationToggle isAnimated={animation} />
+        <AnimationToggle isEnabled={animation} setEnabled={setAnimation} type="animation" />
+      </div>
+      <div className="position">
+        <h2>Title Sticky</h2>
+        <AnimationToggle isEnabled={position} setEnabled={setPosition} type="position" />
       </div>
       <div className="color">
         <h2>Colors</h2>
@@ -59,7 +69,13 @@ const OptionForm: React.FC<OptionProps> = ({
       </div>
       <div className="code">
         <h2>Grab Your Component</h2>
-        <CodeSnippet colors={colors} font={font} shapes={shapes} animation={false} />
+        <CodeSnippet
+          colors={colors}
+          font={font}
+          shapes={shapes}
+          animation={animation}
+          position={position}
+        />
       </div>
     </div>
   );

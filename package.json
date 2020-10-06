@@ -9,10 +9,11 @@
     "test:component": "jest",
     "test:demo": "cd demo && npm run test",
     "test:all": "npm run test:component && npm run test:demo",
-    "start": "build:watch",
+    "start": "npm run build:watch",
     "build": "webpack",
-    "build:watch": "webpack:watch",
-    "fix": "npm rebuild && rm -rf node_modules && npm i"
+    "build:watch": "webpack --watch",
+    "fix": "npm rebuild && rm -rf node_modules && npm i",
+    "webpack": "webpack"
   },
   "repository": {
     "type": "git",
@@ -78,7 +79,7 @@
     "styled-components": "^4.3.2",
     "ts-loader": "^8.0.4",
     "typescript": "^4.0.3",
-    "webpack": "^4.42.0",
+    "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12"
   },
   "dependencies": {
