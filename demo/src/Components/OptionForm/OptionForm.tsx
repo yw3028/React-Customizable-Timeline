@@ -18,8 +18,8 @@ type OptionProps = {
   setAnimation: any;
   position: boolean;
   setPosition: any;
-  orientation: boolean;
-  setOrientation: any;
+  // orientation: boolean;
+  // setOrientation: any;
 };
 
 type Colors = {
@@ -44,9 +44,10 @@ const OptionForm = ({
   setAnimation,
   position,
   setPosition,
-  orientation,
-  setOrientation,
-}: OptionProps) => {
+}: // orientation,
+// setOrientation,
+
+OptionProps) => {
   return (
     <div className="options">
       <h1>Customization</h1>
@@ -60,10 +61,12 @@ const OptionForm = ({
           <h2>Title Sticky</h2>
           <AnimationToggle isEnabled={position} setEnabled={setPosition} type="position" />
         </div>
+        {/* 
         <div className="orientation">
           <h2>Vertical Orientation</h2>
           <AnimationToggle isEnabled={orientation} setEnabled={setOrientation} type="orientation" />
         </div>
+        */}
       </section>
       <div className="color">
         <h2>Colors</h2>

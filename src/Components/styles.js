@@ -109,14 +109,17 @@ export const STimeline = styled.div`
   max-width: 400px;
   margin: 60px auto;
   padding-left: 50px;
+  flex-direction: column;
+  /* TODO: Fix horizontal orientation
   flex-direction: ${props => (props.theme.orientation === 'column' ? 'column' : 'row')};
   overflow-x: ${props => (props.theme.orientation === ')column' ? 'visible' : 'scroll')};
-  flex-wrap: ${props => (props.theme.orientation === ')column' ? '' : 'nowrap')};
+  flex-wrap: ${props => (props.theme.orientation === ')column' ? '' : 'nowrap')};*/ 
 `;
 
 export const STimelineSection = styled.section`
   position: relative;
-  display: ${props => (props.theme.orientation === 'column' ? '' : 'flex')};
+  /* TODO: Fix horizontal orientation
+  display: ${props => (props.theme.orientation === 'column' ? '' : 'flex')};*/
 `;
 
 export const STimelineItemContainer = styled.div`

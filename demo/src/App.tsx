@@ -53,8 +53,10 @@ const App = () => {
           setAnimation={setAnimation}
           position={position}
           setPosition={setPosition}
+          /*
           orientation={orientation}
           setOrientation={setOrientation}
+          */
         />
       </div>
     </div>
