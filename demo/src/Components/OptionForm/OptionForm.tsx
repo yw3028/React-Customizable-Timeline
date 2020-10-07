@@ -47,14 +47,16 @@ const OptionForm: React.FC<OptionProps> = ({
     <div className="options">
       <h1>Customization</h1>
       <p>Basic customization through the component's props and CSS custom-properties.</p>
-      <div className="animation">
-        <h2>Animation</h2>
-        <AnimationToggle isEnabled={animation} setEnabled={setAnimation} type="animation" />
-      </div>
-      <div className="position">
-        <h2>Title Sticky</h2>
-        <AnimationToggle isEnabled={position} setEnabled={setPosition} type="position" />
-      </div>
+      <section>
+        <div className="animation">
+          <h2>Animation</h2>
+          <AnimationToggle isEnabled={animation} setEnabled={setAnimation} type="animation" />
+        </div>
+        <div className="position">
+          <h2>Title Sticky</h2>
+          <AnimationToggle isEnabled={position} setEnabled={setPosition} type="position" />
+        </div>
+      </section>
       <div className="color">
         <h2>Colors</h2>
         <ColorPicker colors={colors} setColors={setColors} />
