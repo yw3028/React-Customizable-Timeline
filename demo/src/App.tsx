@@ -36,7 +36,7 @@ const App = () => {
           lineStyle={shapes.lineShape}
           primaryFont={font}
           animation={animation}
-          titlePositioning={position}
+          stickyTitlePositioning={position}
         />
       </div>
       <div className="customization">
