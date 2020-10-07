@@ -61,7 +61,7 @@ const OptionForm = ({
           <AnimationToggle isEnabled={position} setEnabled={setPosition} type="position" />
         </div>
         <div className="orientation">
-          <h2>Timeline Orientation</h2>
+          <h2>Vertical Orientation</h2>
           <AnimationToggle isEnabled={orientation} setEnabled={setOrientation} type="orientation" />
         </div>
       </section>
