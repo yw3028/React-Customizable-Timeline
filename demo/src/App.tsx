@@ -37,6 +37,7 @@ const App = () => {
           lineStyle={shapes.lineShape}
           primaryFont={font}
           animation={animation}
+          stickyTitlePositioning={position}
           orientation={orientation}
         />
       </div>
