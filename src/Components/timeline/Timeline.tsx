@@ -17,6 +17,7 @@ type Props = {
   dotShape?: string;
   lineStyle?: string;
   stickyTitlePositioning?: boolean;
+  orientation?: boolean;
 };
 
 function Timeline({
@@ -29,6 +30,7 @@ function Timeline({
   dotShape = 'circle',
   lineStyle = 'dotted',
   stickyTitlePositioning = true,
+  orientation = true,
 }: Props) {
   const theme = {
     primaryDarkColor,
@@ -38,6 +40,7 @@ function Timeline({
     dotShape,
     lineStyle,
     stickyTitlePositioning,
+    orientation,
   };
 
   const titleAnimation: Object = useSpring({
