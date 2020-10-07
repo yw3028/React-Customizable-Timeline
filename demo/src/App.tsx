@@ -23,6 +23,7 @@ const App = () => {
   const [font, setFont] = useState('Chivo');
   const [animation, setAnimation] = useState(true);
   const [position, setPosition] = useState(true);
+  const [orientation, setOrientation] = useState(true);
 
   return (
     <div className="demo">
@@ -36,7 +37,7 @@ const App = () => {
           lineStyle={shapes.lineShape}
           primaryFont={font}
           animation={animation}
-          position={position}
+          orientation={orientation}
         />
       </div>
       <div className="customization">
@@ -51,6 +52,8 @@ const App = () => {
           setAnimation={setAnimation}
           position={position}
           setPosition={setPosition}
+          orientation={orientation}
+          setOrientation={setOrientation}
         />
       </div>
     </div>

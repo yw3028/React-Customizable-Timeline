@@ -16,6 +16,7 @@ type Props = {
   titleShape?: string;
   dotShape?: string;
   lineStyle?: string;
+  orientation?: boolean;
 };
 
 function Timeline({
@@ -27,6 +28,7 @@ function Timeline({
   titleShape = 'circle',
   dotShape = 'circle',
   lineStyle = 'dotted',
+  orientation = true,
 }: Props) {
   const theme = {
     primaryDarkColor,
@@ -35,6 +37,7 @@ function Timeline({
     titleShape,
     dotShape,
     lineStyle,
+    orientation,
   };
 
   const titleAnimation: Object = useSpring({
