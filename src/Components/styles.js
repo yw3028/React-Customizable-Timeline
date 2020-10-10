@@ -62,7 +62,6 @@ const titleShapeSelector = shape => {
             width: 54px;
             right:86px;
             border-radius: 4px;
-
             & > div {
                 transform: rotate(-45deg);
               }
@@ -97,22 +96,34 @@ export const STitle = styled.div`
 
 export const STimeline = styled.div`
   border-left: 2px ${props => props.theme.lineStyle} ${props => props.theme.primaryDarkColor};
-  border-bottom-right-radius: 4px;
-  border-top-right-radius: 4px;
   color: ${props => props.theme.primaryDarkColor};
   font-family: ${props => props.theme.primaryFont};
-  margin: 60px auto;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
   position: relative;
   line-height: 1.5em;
   font-size: 1em;
-  padding-left: 50px;
   text-align: left;
   font-weight: 100;
+  display: flex;
   max-width: 400px;
+  margin: 60px auto;
+  padding-left: 50px;
+  flex-direction: column;
+  /* TODO: Fix horizontal orientation
+  flex-direction: ${props => (props.theme.orientation === 'column' ? 'column' : 'row')};
+  overflow-x: ${props => (props.theme.orientation === ')column' ? 'visible' : 'scroll')};
+  flex-wrap: ${props => (props.theme.orientation === ')column' ? '' : 'nowrap')};*/ 
 `;
 
-export const STimelineSection = styled.div`
+export const STimelineSection = styled.section`
   position: relative;
+  /* TODO: Fix horizontal orientation
+  display: ${props => (props.theme.orientation === 'column' ? '' : 'flex')};*/
+`;
+
+export const STimelineItemContainer = styled.div`
+  display: inline-block;
 `;
 
 export const STimelineItem = styled.div`

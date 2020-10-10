@@ -16,6 +16,8 @@ type Props = {
   titleShape?: string;
   dotShape?: string;
   lineStyle?: string;
+  stickyTitlePositioning?: boolean;
+  orientation?: boolean;
 };
 
 function Timeline({
@@ -27,6 +29,8 @@ function Timeline({
   titleShape = 'circle',
   dotShape = 'circle',
   lineStyle = 'dotted',
+  stickyTitlePositioning = true,
+  orientation = true,
 }: Props) {
   const theme = {
     primaryDarkColor,
@@ -35,6 +39,8 @@ function Timeline({
     titleShape,
     dotShape,
     lineStyle,
+    stickyTitlePositioning,
+    orientation,
   };
 
   const titleAnimation: Object = useSpring({
@@ -47,12 +53,27 @@ function Timeline({
     config: config.wobbly,
   });
 
-  const lineAnimation: Object = useSpring({
-    from: { transform: 'translate3d(-100%, 0, 0)' },
-    to: { transform: 'translate3d(0, 0, 0)' },
-    config: { mass: 2, tension: 120, friction: 24 },
-    reset: animated,
-  } as any);
+  const lineAnimation: Object = useSpring(
+    animation
+      ? ({
+          from: { transform: 'translate3d(-100%, 0, 0)' },
+          to: { transform: 'translate3d(0, 0, 0)' },
+          config: { mass: 2, tension: 120, friction: 24 },
+          reset: animated,
+        } as any)
+      : null,
+  );
+
+  const position: Object = {
+    position: stickyTitlePositioning ? 'sticky' : 'relative',
+    top: stickyTitlePositioning ? '60px' : 0,
+    zIndex: 999,
+  };
+
+  const styles: Object = {
+    ...position,
+    ...titleAnimation,
+  };
 
   return (
     <ThemeProvider theme={theme}>
@@ -61,7 +82,7 @@ function Timeline({
           {data?.map((item, index) => {
             return (
               <STimelineSection key={index}>
-                <animated.div style={animation ? titleAnimation : undefined}>
+                <animated.div style={styles}>
                   <STitle key={item.title}>
                     <div>{item.title}</div>
                   </STitle>

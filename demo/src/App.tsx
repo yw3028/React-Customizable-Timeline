@@ -21,6 +21,9 @@ const App = () => {
   const [colors, setColors] = useState(defaultColors);
   const [shapes, setShapes] = useState(defaultShapes);
   const [font, setFont] = useState('Chivo');
+  const [animation, setAnimation] = useState(true);
+  const [position, setPosition] = useState(true);
+  const [orientation, setOrientation] = useState(true);
 
   return (
     <div className="demo">
@@ -33,7 +36,9 @@ const App = () => {
           dotShape={shapes.dotShape}
           lineStyle={shapes.lineShape}
           primaryFont={font}
-          animation={true}
+          animation={animation}
+          stickyTitlePositioning={position}
+          orientation={orientation}
         />
       </div>
       <div className="customization">
@@ -44,7 +49,14 @@ const App = () => {
           setShapes={setShapes}
           font={font}
           setFont={setFont}
-          animation={true}
+          animation={animation}
+          setAnimation={setAnimation}
+          position={position}
+          setPosition={setPosition}
+          /*
+          orientation={orientation}
+          setOrientation={setOrientation}
+          */
         />
       </div>
     </div>

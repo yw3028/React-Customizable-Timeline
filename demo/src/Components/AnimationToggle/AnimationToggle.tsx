@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './AnimationToggle.scss';
 
 type OptionProps = {
-  isAnimated: boolean;
+  isEnabled: boolean;
+  setEnabled: (boolean) => {};
+  type: string;
 };
 
-const AnimationToggle = ({ isAnimated }) => {
-  const [animation, setAnimation] = useState(isAnimated);
-
+const AnimationToggle = ({ isEnabled, setEnabled, type }: OptionProps) => {
   const handleAnimationChange = () => {
-    setAnimation(!animation);
+    setEnabled(!isEnabled);
   };
 
   const clickedButton = { color: 'beige', backgroundColor: '#ad9d9d' };
@@ -18,9 +18,10 @@ const AnimationToggle = ({ isAnimated }) => {
     <button
       className="toggle-button"
       onClick={handleAnimationChange}
-      style={animation ? undefined : clickedButton}
+      style={isEnabled ? clickedButton : undefined}
+      id={type}
     >
-      {animation ? 'ON' : 'OFF'}
+      {isEnabled ? 'ON' : 'OFF'}
     </button>
   );
 };

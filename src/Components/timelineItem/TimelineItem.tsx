@@ -53,7 +53,7 @@ const TimelineItem = ({ title, subtitle, content, img, label, location, animatio
         )}
         {location && (
           <div style={{ fontSize: 'small', textAlign: 'right' }}>
-            <span role="img" aria-label="localtion">
+            <span role="img" aria-label="location">
               📍
             </span>{' '}
             {location}
