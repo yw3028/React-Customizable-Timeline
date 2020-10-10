@@ -2,22 +2,28 @@ import React from 'react';
 import './AnimationToggle.scss';
 
 type OptionProps = {
-    animation: boolean;
-    setAnimation: any;
+  isEnabled: boolean;
+  setEnabled: (boolean) => {};
+  type: string;
 };
 
-const AnimationToggle: React.FC<OptionProps> = ({ animation, setAnimation }) => {
-    const handleAnimationChange = () => {
-        setAnimation(!animation);
-    };
+const AnimationToggle = ({ isEnabled, setEnabled, type }: OptionProps) => {
+  const handleAnimationChange = () => {
+    setEnabled(!isEnabled);
+  };
 
-    const clickedButton = { color: 'beige', backgroundColor: '#ad9d9d' };
+  const clickedButton = { color: 'beige', backgroundColor: '#ad9d9d' };
 
-    return (
-        <button className="toggle-button" onClick={handleAnimationChange} style={animation ? undefined : clickedButton}>
-            {animation ? 'ON' : 'OFF'}
-        </button>
-    );
+  return (
+    <button
+      className="toggle-button"
+      onClick={handleAnimationChange}
+      style={isEnabled ? clickedButton : undefined}
+      id={type}
+    >
+      {isEnabled ? 'ON' : 'OFF'}
+    </button>
+  );
 };
 
 export default AnimationToggle;

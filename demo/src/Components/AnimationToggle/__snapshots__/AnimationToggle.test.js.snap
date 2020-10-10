@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AnimationToggle component render correctly 1`] = `
+<body>
+  <div>
+    <button
+      class="toggle-button"
+    >
+      ON
+    </button>
+  </div>
+</body>
+`;
