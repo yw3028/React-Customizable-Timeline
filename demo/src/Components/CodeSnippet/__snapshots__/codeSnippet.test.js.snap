@@ -1,0 +1,145 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AnimationToggle component render correctly 1`] = `
+<body>
+  <div>
+    <pre
+      class=" language-javascript"
+    >
+      <code
+        class=" language-javascript"
+      >
+        <span
+          class="token operator"
+        >
+          &lt;
+        </span>
+        Timeline
+  data
+        <span
+          class="token operator"
+        >
+          =
+        </span>
+        <span
+          class="token punctuation"
+        >
+          {
+        </span>
+        data
+        <span
+          class="token punctuation"
+        >
+          }
+        </span>
+        
+  primaryDarkColor
+        <span
+          class="token operator"
+        >
+          =
+        </span>
+        <span
+          class="token string"
+        >
+          '#625261'
+        </span>
+         
+  primaryLightColor
+        <span
+          class="token operator"
+        >
+          =
+        </span>
+        <span
+          class="token string"
+        >
+          '#F5F5DC'
+        </span>
+         
+  titleShape
+        <span
+          class="token operator"
+        >
+          =
+        </span>
+        <span
+          class="token string"
+        >
+          'diamond'
+        </span>
+         
+  dotShape
+        <span
+          class="token operator"
+        >
+          =
+        </span>
+        <span
+          class="token string"
+        >
+          'circle'
+        </span>
+         
+  lineStyle
+        <span
+          class="token operator"
+        >
+          =
+        </span>
+        <span
+          class="token string"
+        >
+          'dotted'
+        </span>
+         
+  primaryFont
+        <span
+          class="token operator"
+        >
+          =
+        </span>
+        <span
+          class="token string"
+        >
+          'chivo'
+        </span>
+         
+  animation
+        <span
+          class="token operator"
+        >
+          =
+        </span>
+        <span
+          class="token punctuation"
+        >
+          {
+        </span>
+        <span
+          class="token boolean"
+        >
+          true
+        </span>
+        <span
+          class="token punctuation"
+        >
+          }
+        </span>
+        
+
+        <span
+          class="token operator"
+        >
+          /
+        </span>
+        <span
+          class="token operator"
+        >
+          &gt;
+        </span>
+      </code>
+    </pre>
+  </div>
+</body>
+`;
