@@ -41,6 +41,7 @@ import Timeline from 'react-customizable-timeline';
   lineStyle="dotted"
   primaryFont="monospace"
   animation={true}
+  stickyTitlePositioning={true}
 />
 ```
 
@@ -85,6 +86,7 @@ const data = [
 |    **titleShape**     |  String  |   Optional   |       circle        | `circle`/`square`/`rectangular`/`diamond` |
 |     **dotShape**      |  String  |   Optional   |       circle        |    `circle`/`square`/`line`/`diamond`     |
 |     **lineStyle**     |  String  |   Optional   |       dotted        |    `solid`/`dotted`/`dashed`/`hidden`     |
+| **stickyTitlePositioning**|Boolean  |   Optional   |        true         |                true/false                 |
 
 ## Contributing
 
