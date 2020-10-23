@@ -38,7 +38,7 @@ const CodeSnippet: React.FC<OptionProps> = ({ colors, font, shapes, animation, p
   lineStyle='${shapes.lineShape}' 
   primaryFont='${font}' 
   animation={${animation}}
-  stickyTitlePositioning=${position ? `true` : `false`}
+  stickyTitlePositioning={${position ? `true` : `false`}}
 />`}
       </code>
     </pre>
