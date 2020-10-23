@@ -88,9 +88,11 @@ const data = [
 
 To contribue please read the [CONTRIBUTING.md](https://github.com/yw3028/React-Customizable-Timeline/blob/master/CONTRIBUTING.md)
 
-## Contributors
+## Author
 
 - Yu Wang - [GitHub](https://github.com/yw3028)
+
+## Contributors
 - Elizabeth Sarquiz - [GitHub](https://github.com/LisaPisa12)
 - Erik Pastor - [GitHub](https://github.com/erikpr1994)
 
