@@ -4,6 +4,8 @@
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat)](https://github.com/prettier/prettier)
 [![Issues](http://img.shields.io/github/issues/yw3028/React-Customizable-Timeline.svg)](https://github.com/yw3028/React-Customizable-Timelin/issues)
 [![license](https://img.shields.io/github/license/yw3028/React-Customizable-Timeline.svg)](https://github.com/yw3028/React-Customizable-Timeline/blob/master/LICENSE)
+[![Coverage Status](https://coveralls.io/repos/githubyw3028/React-Customizable-Timeline/badge.svg?branch=master)](https://coveralls.io/github/yw3028/React-Customizable-Timeline?branch=master)
+
 
 ## Getting Started
 
