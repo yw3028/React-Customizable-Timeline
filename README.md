@@ -5,7 +5,7 @@
 [![Issues](http://img.shields.io/github/issues/yw3028/React-Customizable-Timeline.svg)](https://github.com/yw3028/React-Customizable-Timelin/issues)
 [![license](https://img.shields.io/github/license/yw3028/React-Customizable-Timeline.svg)](https://github.com/yw3028/React-Customizable-Timeline/blob/master/LICENSE)
 
-`React-Customizable-Timeline` is a simple yet fully customizable component that allows you to create a timeline with almost no effort.
+`React-Customizable-Timeline` is a simple yet fully customizable component that allows you to create a timeline with almost zero effort.
 
 ## Getting Started
 
