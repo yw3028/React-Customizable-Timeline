@@ -29,8 +29,8 @@ const CodeSnippet: React.FC<OptionProps> = ({ colors, font, shapes, animation, p
   return (
     <pre>
       <code className="language-javascript">
-              {`
-                 <Timeline
+        {`
+        <Timeline
            data={data}
            primaryDarkColor='${colors.primaryColor}' 
            primaryLightColor='${colors.secondaryColor}' 
@@ -40,7 +40,7 @@ const CodeSnippet: React.FC<OptionProps> = ({ colors, font, shapes, animation, p
            primaryFont='${font}' 
            animation={${animation}}
            stickyTitlePositioning={${position ? `true` : `false`}}
-          />`}
+        />`}
       </code>
     </pre>
   );
