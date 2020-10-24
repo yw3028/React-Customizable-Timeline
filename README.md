@@ -5,6 +5,8 @@
 [![Issues](http://img.shields.io/github/issues/yw3028/React-Customizable-Timeline.svg)](https://github.com/yw3028/React-Customizable-Timelin/issues)
 [![license](https://img.shields.io/github/license/yw3028/React-Customizable-Timeline.svg)](https://github.com/yw3028/React-Customizable-Timeline/blob/master/LICENSE)
 
+`React-Customizable-Timeline` is a simple yet fully customizable component that allows you to create a timeline with almost zero effort.
+
 ## Getting Started
 
 ```bash
@@ -39,6 +41,7 @@ import Timeline from 'react-customizable-timeline';
   lineStyle="dotted"
   primaryFont="monospace"
   animation={true}
+  stickyTitlePositioning={true}
 />
 ```
 
@@ -83,14 +86,17 @@ const data = [
 |    **titleShape**     |  String  |   Optional   |       circle        | `circle`/`square`/`rectangular`/`diamond` |
 |     **dotShape**      |  String  |   Optional   |       circle        |    `circle`/`square`/`line`/`diamond`     |
 |     **lineStyle**     |  String  |   Optional   |       dotted        |    `solid`/`dotted`/`dashed`/`hidden`     |
+| **stickyTitlePositioning**|Boolean  |   Optional   |        true         |                true/false                 |
 
 ## Contributing
 
 To contribue please read the [CONTRIBUTING.md](https://github.com/yw3028/React-Customizable-Timeline/blob/master/CONTRIBUTING.md)
 
-## Contributors
+## Author
 
 - Yu Wang - [GitHub](https://github.com/yw3028)
+
+## Contributors
 - Elizabeth Sarquiz - [GitHub](https://github.com/LisaPisa12)
 - Erik Pastor - [GitHub](https://github.com/erikpr1994)
 
