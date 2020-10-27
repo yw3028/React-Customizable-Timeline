@@ -26,9 +26,9 @@ To start the project:
 npm start # to watch the files with webpack
 ```
 
-`./src` folder contains react-customizable-timeline component.
+`./src` folder contains React-Customizable-Timeline component.
 
-Use `npm link` comand in the main folder to use locally the package. Create your `create-react-app` or use the one inside the `/demo` folder, inside the folder run `npm link react-customizable-timeline` in order to provide the component to the app.
+Use `npm link` comand in the main folder to use locally the package. Create your `create-react-app` or use the one inside the `/demo` folder, inside the folder run `npm link React-Customizable-Timeline` in order to provide the component to the app.
 
 Once you are done and you think your code works well, submit a Pull Request.
 
