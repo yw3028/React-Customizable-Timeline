@@ -16,7 +16,7 @@ Bugs are tracked as [GitHub issues](https://guides.github.com/features/issues/).
 
 Explain the problem and include additional details to help maintainers reproduce the problem. 🤓
 
-### Code Contribution 
+### Code Contribution
 
 In order to contribute to this project, fork the repository on your GitHub account, clone it and create a new branch to fix a bug or implement a new feature.
 
@@ -26,9 +26,9 @@ To start the project:
 npm start # to watch the files with webpack
 ```
 
-`./src` folder contains Galleract component. 
+`./src` folder contains react-customizable-timeline component.
 
-Use `npm link` comand in the main folder to use locally the package. Create your `create-react-app` or use the one inside the `/example` folder, inside the folder run `npm link galleract` in order to provide the component to the app.
+Use `npm link` comand in the main folder to use locally the package. Create your `create-react-app` or use the one inside the `/demo` folder, inside the folder run `npm link react-customizable-timeline` in order to provide the component to the app.
 
 Once you are done and you think your code works well, submit a Pull Request.
 
@@ -36,7 +36,7 @@ Once you are done and you think your code works well, submit a Pull Request.
 
 Please follow these steps to have your contribution considered by the maintainers:
 
-1. Create a descriptive pull request and, if exist, reference the related issue. 
+1. Create a descriptive pull request and, if exist, reference the related issue.
 2. Follow the convention of the existing code you are working on.
 
 While the prerequisites above must be satisfied prior to having your pull request reviewed, the reviewer(s) may ask you to complete additional design work, tests, or other changes before your pull request can be ultimately accepted.
@@ -49,12 +49,11 @@ Write clean code base on this [guides](https://github.com/ryanmcdermott/clean-co
 
 ### Comment Your code
 
-A commented code is always the most clear code. Follow the  [JS doc conventions](https://devdocs.io/jsdoc/about-getting-started) to the comment the part of code you add.
+A commented code is always the most clear code. Follow the [JS doc conventions](https://devdocs.io/jsdoc/about-getting-started) to the comment the part of code you add.
 
 ### Git Commit Messages
 
-* Use the present tense ("Add feature" not "Added feature")
-* Use the imperative mood ("Move cursor to..." not "Moves cursor to...")
-* Limit the first line to 72 characters or less
-* Reference issues and pull requests liberally after the first line
-
+- Use the present tense ("Add feature" not "Added feature")
+- Use the imperative mood ("Move cursor to..." not "Moves cursor to...")
+- Limit the first line to 72 characters or less
+- Reference issues and pull requests liberally after the first line
